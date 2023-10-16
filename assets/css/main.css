@@ -13,14 +13,14 @@
 /* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Amatic SC", sans-serif;
-  --font-secondary: "Inter", sans-serif;
+  /* --font-primary: "Amatic SC", sans-serif; */
+  /* --font-secondary: "Inter", sans-serif; */
 }
 
 /* Colors */
 :root {
   --color-default: #212529;
-  --color-primary: #ce1212;
+  --color-primary: #0ea5e9;
   --color-secondary: #37373f;
 }
 
@@ -43,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: #ec2727;
+  color: #38bdf8;
   text-decoration: none;
 }
 
@@ -79,7 +79,7 @@ section {
   font-weight: 400;
   margin: 0;
   padding: 0;
-  color: #7f7f90;
+  /* color: #7f7f90; */
   text-transform: uppercase;
   font-family: var(--font-default);
 }
@@ -178,7 +178,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: #ec2727;
+  background: #38bdf8;
   color: #fff;
 }
 
@@ -245,7 +245,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  background: #fff;
+  /* background: #fff; */
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
@@ -270,10 +270,10 @@ section {
 
 .header .logo h1 {
   font-size: 28px;
-  font-weight: 700;
-  color: #000;
+  font-weight: 600;
+  color:#fff;
   margin: 0;
-  font-family: var(--font-secondary);
+  font-family: var(--font-default);
 }
 
 .header .logo h1 span {
@@ -294,7 +294,7 @@ section {
 .header .btn-book-a-table:hover,
 .header .btn-book-a-table:focus:hover {
   color: #fff;
-  background: rgba(206, 18, 18, 0.8);
+  background: #38bdf8;
 }
 
 section {
@@ -335,7 +335,7 @@ section {
     font-family: var(--font-secondary);
     font-size: 16px;
     font-weight: 600;
-    color: #7f7f90;
+    color: #9a9ab3;
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -372,7 +372,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #000;
+    color: #38bdf8;
   }
 
   .navbar .dropdown ul {
@@ -1283,7 +1283,7 @@ section {
 }
 
 .book-a-table .php-email-form button[type=submit]:hover {
-  background: #ec2727;
+  background: #38bdf8;
 }
 
 @keyframes animate-loading {
@@ -1469,7 +1469,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ec2727;
+  background: #38bdf8;
 }
 
 @keyframes animate-loading {
@@ -1520,13 +1520,13 @@ section {
   border-radius: 50px;
   transition: 0.5s;
   color: #fff;
-  background: var(--color-primary);
+  /* background: var(--color-primary); */
   box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
 }
 
 .hero .btn-book-a-table:hover {
-  background: rgba(206, 18, 18, 0.8);
-  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+  background: #38bdf8;
+  box-shadow: 0 8px 28px rgba(110, 231, 240, 0.884);
 }
 
 .hero .btn-watch-video {
