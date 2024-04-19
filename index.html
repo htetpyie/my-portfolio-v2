@@ -61,10 +61,11 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="#hero" class="hover:text-sky-400">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Experience</a></li>
-                    <li><a href="#events">Projects</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#project">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -79,7 +80,7 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="hero d-flex align-items-center section-bg">
+    <section id="home" class="hero d-flex align-items-center section-bg">
         <div class="container">
             <div class="row justify-content-between gy-5">
                 <div
@@ -107,18 +108,64 @@
     </section>
     <!-- End Hero Section -->
 
+    <section id="about">
+
+    </section>
+
+    <section id="skill">
+
+    </section>
+
+
+    <section id="experience">
+
+    </section>
+
     <section id="projects">
-        <div class="container">
-            <div class="card">
-                <div class="card-header">
-                    <div class="card-body">
-
-                        <img src="" alt="Project Photo">This is a project image
+        <div class="container-fluid">
+            <ul class="row portfolio-item">
+                <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="assets/img/hero-img.jpg"
+                        itemprop="thumbnail" alt="Hero Image" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Project Name</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in"
+                                href="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-
-                    <div class="card-footer"></div>
-                </div>
-            </div>
+                </li>
+                <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
+                    <img src="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+                        itemprop="thumbnail" alt="Image description" />
+                    <div class="portfolio-overlay">
+                        <div class="overlay-content">
+                            <p class="category">Project Name</p>
+                            <a href="#" title="View Project" target="_blank">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                            <a data-fancybox="item" title="click to zoom-in"
+                                href="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+                                data-size="1200x600">
+                                <div class="magnify-icon">
+                                    <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -180,6 +227,14 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <!-- JS Links -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+  <!-- https://codepen.io/Skies-Land/pen/BaEPpLr -->
+
     <!-- End Scripts -->
 </body>
 
