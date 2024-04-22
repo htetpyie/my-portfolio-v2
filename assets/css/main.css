@@ -252,7 +252,7 @@ section {
   border-bottom: 1px solid #fff;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .header {
     height: 70px;
   }
@@ -304,9 +304,10 @@ section {
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
   .navbar {
     padding: 0;
+    box-shadow: none;
   }
 
   .navbar ul {
@@ -385,8 +386,7 @@ section {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    background: rgb(31 41 55 / var(--tw-bg-opacity));
     transition: 0.3s;
     border-radius: 4px;
   }
@@ -432,7 +432,7 @@ section {
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1366px) {
+@media (min-width: 992px) and (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
@@ -442,7 +442,7 @@ section {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
 
   .mobile-nav-show,
   .mobile-nav-hide {
@@ -453,17 +453,18 @@ section {
 /*--------------------------------------------------------------
 # Mobile Navigation
 --------------------------------------------------------------*/
-@media (max-width: 1279px) {
+@media (max-width: 991px) {
   .navbar {
     position: fixed;
     top: 0;
     right: -100%;
     width: 100%;
-    max-width: 400px;
+    max-width: 250px;
     border-left: 1px solid #666;
     bottom: 0;
     transition: 0.3s;
     z-index: 9997;
+    padding: 0;
   }
 
   .navbar ul {
@@ -471,7 +472,7 @@ section {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgb(31 41 55 / var(--tw-bg-opacity));
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -482,9 +483,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 50px;
     font-family: var(--font-secondary);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
     font-size: 16px;
     font-weight: 600;
     color: #7f7f90;
@@ -501,12 +501,12 @@ section {
 
   .navbar a:hover,
   .navbar li:hover>a {
-    color: #000;
+    color: rgb(56, 189, 248);
   }
 
   .navbar .active,
   .navbar .active:focus {
-    color: #000;
+    color: rgb(56, 189, 248);
     border-color: var(--color-primary);
   }
 
@@ -536,7 +536,7 @@ section {
   }
 
   .mobile-nav-hide {
-    color: var(--color-secondary);
+    color: #7f7f90;
     font-size: 32px;
     cursor: pointer;
     line-height: 0;
@@ -559,7 +559,7 @@ section {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgb(42 47 55);
     z-index: 9996;
   }
 }
