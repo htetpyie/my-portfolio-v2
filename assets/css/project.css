@@ -3,15 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #fff;
   background-color: #000000;
   z-index: 0;
 }
+
 p {
   color: #fff;
 }
+
 /* -----------------------------------
       Gallery Section
 --------------------------------------*/
@@ -19,15 +22,18 @@ p {
   padding: 50px 0;
   background-color: #000;
 }
+
 .portfolio-section h2 {
   font-size: 28px;
   font-weight: 600;
   color: #fff;
   text-transform: uppercase;
 }
+
 .portfolio-menu {
   text-align: center;
 }
+
 .control {
   background: #000;
   color: #fff;
@@ -42,28 +48,35 @@ p {
   -o-transition: all 05s ease;
   transition: all 0.5s ease;
 }
+
 .control:hover {
   background: #343a40;
 }
+
 .mixitup-control-active {
   color: #fff;
   background: #343a40;
 }
+
 .fancybox-container button:focus {
   outline: 0;
   box-shadow: none;
 }
+
 .portfolio-item {
   padding-top: 30px;
 }
+
 .pd {
   padding: 0;
   padding: 10px;
 }
+
 .pd img {
   height: 180px;
   transition: all 0.5s;
 }
+
 .portfolio-overlay {
   position: absolute;
   z-index: 2;
@@ -77,11 +90,13 @@ p {
   transition: all 0.5s;
   transform: scale(0);
 }
+
 .portfolio-overlay p,
 .portfolio-overlay a {
   position: relative;
   z-index: 4;
 }
+
 .portfolio-overlay::before {
   content: "";
   width: 0;
@@ -93,6 +108,7 @@ p {
   transition: 50ms height ease 150ms;
   z-index: 3;
 }
+
 .portfolio-overlay::after {
   content: "";
   width: 0;
@@ -104,6 +120,7 @@ p {
   transition: 100ms width ease 200ms;
   z-index: 3;
 }
+
 .portfolio-item:hover .portfolio-overlay::before {
   width: 80%;
   height: 80%;
@@ -111,6 +128,7 @@ p {
   border-right: 1px solid #50977f;
   transition: width 0.1s ease 0.3s, height 0.1s ease 0.5s;
 }
+
 .portfolio-item:hover .portfolio-overlay::after {
   width: 80%;
   height: 80%;
@@ -118,10 +136,12 @@ p {
   border-left: 1px solid #50977f;
   transition: width 0.1s ease 0.6s, height 0.1s ease 0.7s;
 }
+
 .portfolio-item li:hover .portfolio-overlay {
   visibility: visible;
   transform: scale(1);
 }
+
 .portfolio-overlay .category {
   margin-top: 70px;
   margin-bottom: 20px;
@@ -129,6 +149,7 @@ p {
   color: #fff;
   font-weight: 500;
 }
+
 .portfolio-overlay .magnify-icon {
   height: 40px;
   width: 40px;
@@ -139,9 +160,11 @@ p {
   display: inline-block;
   transition: all 0.25s;
 }
+
 .portfolio-overlay .magnify-icon:hover {
   background: #000;
 }
+
 .portfolio-overlay .magnify-icon p span i {
   font-size: 15px;
   color: #fff;

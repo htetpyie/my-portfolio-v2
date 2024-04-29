@@ -271,7 +271,7 @@ section {
 .header .logo h1 {
   font-size: 28px;
   font-weight: 600;
-  color:#fff;
+  color: #fff;
   margin: 0;
   font-family: var(--font-default);
 }
@@ -1538,14 +1538,17 @@ section {
   border-radius: 100%;
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.4);
 }
+
 .back-to-top:hover {
   background-color: #38bdf8;
 }
+
 .back-to-top:active {
   box-shadow: none;
   background-color: #38bdf8;
 }
-.back-to-top .icon{
+
+.back-to-top .icon {
   color: white;
   font-size: 18px;
   text-align: center;
