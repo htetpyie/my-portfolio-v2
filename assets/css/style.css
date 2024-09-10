@@ -18,3 +18,7 @@ footer{
 .footer-links li a{
     color: #b7b7cc !important;
 }
+
+li::marker{
+    content: none !important;
+}
