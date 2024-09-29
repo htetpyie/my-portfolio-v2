@@ -10,6 +10,12 @@ ul{
 
 .section-title{
     letter-spacing: 2px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.section-sub-title{
+    letter-spacing: 2px;
 }
 
 footer{
