@@ -4,6 +4,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+ul{
+    padding: 0;
+}
+
 .section-title{
     letter-spacing: 2px;
 }
@@ -32,4 +36,31 @@ footer{
 
 li::marker{
     content: none !important;
+}
+
+
+/* Skill Section */
+#skill .skill-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#skill .skill-container .skill-card{
+    font-size: 2rem;
+    text-align: center;
+    background-color: #1f1c1c;
+    color: #fff;
+    width: 130px;
+    height: 100px;
+    padding: 15px 0px;
+    margin: 10px;
+    border-radius: .5rem;
+}
+
+#skill .skill-container .skill-card .skill-title{
+    font-size: .8rem;
 }
