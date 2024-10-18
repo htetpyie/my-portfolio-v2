@@ -12,6 +12,7 @@ ul{
     letter-spacing: 2px;
     font-size: 1.2rem;
     text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
 .section-sub-title{
@@ -69,4 +70,8 @@ li::marker{
 
 #skill .skill-container .skill-card .skill-title{
     font-size: .8rem;
+}
+
+.pf-text-white{
+    color: #726659 !important;
 }
