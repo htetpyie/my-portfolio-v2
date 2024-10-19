@@ -2,3 +2,7 @@
 
 ### Technology icons
 https://techicons.dev/icons/tailwindcss
+
+
+### dev icons
+https://devicon.dev/
