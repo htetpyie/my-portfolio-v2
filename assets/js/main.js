@@ -123,11 +123,11 @@ document.addEventListener('DOMContentLoaded', () => {
    * Gallery Slider
    */
    const swiper = new Swiper('.swiper', {
-    speed: 400,
+    speed: 2000,
     loop: true,
     centeredSlides: true,
     autoplay: {
-      delay: 3000,
+      delay: 4000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',

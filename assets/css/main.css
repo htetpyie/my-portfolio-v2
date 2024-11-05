@@ -600,7 +600,7 @@ section {
 }
 
 .custom-swiper .swiper-pagination .swiper-pagination-bullet {
-  background-color: var(--color-primary);
+  background-color: #fff;
   border: 0;
   width: 12px;
   height: 12px;
@@ -608,7 +608,7 @@ section {
 }
 
 .custom-swiper .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+  background-color: var(--color-primary);
   opacity: 1;
 }
 
