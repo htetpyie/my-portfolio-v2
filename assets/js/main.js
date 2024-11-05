@@ -113,17 +113,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /**
-   * Initiate glightbox
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
-
-  /**
    * Gallery Slider
    */
+  jsonData()
+  const progressCircle = document.querySelector(".swiper .autoplay-progress svg");
+  const progressContent = document.querySelector(".swiper .autoplay-progress span");
+
    const swiper = new Swiper('.swiper', {
-    speed: 2000,
+    //speed: 2000,
     loop: true,
     centeredSlides: true,
     autoplay: {
@@ -135,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
-    },
+    },   
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -149,7 +146,13 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 5,
         spaceBetween: 20
       }
-    }
+    },
+    // on: {
+    //   autoplayTimeLeft(s, time, progress) {
+    //     progressCircle.style.setProperty("--progress", 1 - progress);
+    //     progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+    //   }
+    // }
   });
 
   /**
@@ -168,3 +171,23 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
+
+
+
+const jsonData = () => {
+  fetch('data.json')
+  .then(response => {
+    if(!response.ok){
+      throw new Error("Json file not found.");
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log(data);
+  })
+  .catch(error => console.error('There was a problem with json file:',error))
+
+}
+
