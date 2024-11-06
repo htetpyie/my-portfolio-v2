@@ -115,24 +115,24 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Gallery Slider
    */
-  jsonData()
+  loadData();
   const progressCircle = document.querySelector(".swiper .autoplay-progress svg");
   const progressContent = document.querySelector(".swiper .autoplay-progress span");
 
-   const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.swiper', {
     //speed: 2000,
     loop: true,
     centeredSlides: true,
     autoplay: {
-      delay: 4000,
+      delay: 3000,
       disableOnInteraction: false
     },
-    slidesPerView: 'auto',
+    //slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
-    },   
+    },
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -147,12 +147,12 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 20
       }
     },
-    // on: {
-    //   autoplayTimeLeft(s, time, progress) {
-    //     progressCircle.style.setProperty("--progress", 1 - progress);
-    //     progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-    //   }
-    // }
+    on: {
+      autoplayTimeLeft(s, time, progress) {
+        progressCircle.style.setProperty("--progress", 1 - progress);
+        progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+      }
+    }
   });
 
   /**
@@ -172,22 +172,57 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-
-
-
-
-const jsonData = () => {
+const loadData = () => {
   fetch('data.json')
-  .then(response => {
-    if(!response.ok){
-      throw new Error("Json file not found.");
-    }
-    return response.json();
-  })
-  .then(data => {
-    console.log(data);
-  })
-  .catch(error => console.error('There was a problem with json file:',error))
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Json file not found.");
+      }
+      return response.json();
+    })
+    .then(data => {
+      bindProjectData(data)
+    })
+    .catch(error => console.error('There was a problem with json file:', error))
+}
 
+const bindProjectData = (jsonData) => {
+  const projects = jsonData.projects;
+  const projectSwiper = document.getElementById("project-swiper");
+  projects.map((item) => {
+    const projectElement = createProjecElement(item);
+    projectSwiper.appendChild(projectElement)
+  })
+}
+
+const createProjecElement = (projectData) => {
+  const swiperSlide = document.createElement("div");
+  swiperSlide.className = "swiper-slide project-item";
+  swiperSlide.innerHTML = `
+       <a class=" glightbox" href="#">
+          <div>
+              <img src="${projectData.imageSrc}" class="img-fluid project-image"
+                  itemprop="thumbnail" alt="${projectData.title}" />
+              <div class="project-overlay">
+                  <div class="overlay-content">
+                      <p class="category">${projectData.title}</p>
+                      <a href="${projectData.codeLink}" title="View Code"
+                          target="_blank">
+                          <div class="magnify-icon">
+                              <p><span><i class="fa fa-link" aria-hidden="true"></i></span></p>
+                          </div>
+                      </a>
+                      <a data-fancybox="item" title="Live Preview" target="_blank"
+                          href="${projectData.previewLink}">
+                          <div class="magnify-icon">
+                              <p><span><i class="fa fa-search" aria-hidden="true"></i></span></p>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+          </div>
+        </a>
+  `;
+  return swiperSlide;
 }
 

@@ -2,25 +2,31 @@
     "projects": [
         {
             "title" : "2048 Game",
-            "image" : "/assets/img/2048-game.png",
+            "imageSrc" : "/assets/img/2048-game.png",
             "codeLink" : "https://github.com/htetpyie/BlazorWebAsm-2048-game",
             "previewLink": "https://htetpyie-2048-game-blazor-webasm.netlify.app/"
         },
         {
             "title" : "QR Generator (<small>Blazor WebAssembly</small>)",
-            "image" : "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+            "imageSrc" : "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
             "codeLink" : "#",
             "previewLink": "#"
         },
         {
             "title" : "Hangfire App",
-            "image" : "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+            "imageSrc" : "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
             "codeLink" : "https://github.com/htetpyie/Hangfire-with-asp-dot-net-core",
             "previewLink": "#"
         },
         {
             "title" : "Missing Historical Records",
-            "image" : "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+            "imageSrc" : "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+            "codeLink" : "https://github.com/htetpyie/blazor-web-asm-missing-historical-record",
+            "previewLink": "#"
+        },
+        {
+            "title" : "Missing Historical Records",
+            "imageSrc" : "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
             "codeLink" : "https://github.com/htetpyie/blazor-web-asm-missing-historical-record",
             "previewLink": "#"
         }
