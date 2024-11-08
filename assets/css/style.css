@@ -61,10 +61,10 @@ li::marker{
     text-align: center;
     background-color: #1f1c1c;
     color: #fff;
-    width: 130px;
-    height: 100px;
-    padding: 15px 0px;
-    margin: 10px;
+    width: 85px;
+    height: 90px;
+    padding: 10px 0px;
+    margin: 5px;
     border-radius: .5rem;
 }
 
