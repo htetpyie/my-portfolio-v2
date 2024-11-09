@@ -509,7 +509,7 @@ section {
 }
 
 .hero-image {
-  background-image: url("../img/hppm6.jpg");
+  background-image: url("../img/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   height: 90vh;
@@ -536,29 +536,28 @@ section {
   transform: translate(-90%, -50%);
 }
 
-@media (max-width : 640px) {
-  .hero-text {
-    transform: translate(-50%, -50%);
-    width: 100%;
-  }
-}
-
-.hero-text .name {
+.hero-text h1 {
   font-size: 2.3rem;
-  margin-bottom: 10px;
 }
 
-.hero-text .job {
-  font-size: 1.2rem;
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .hero-btn {
   margin-top: 2rem;
-}
-
-.hero-btn p {
-  font-weight: 400;
-  margin-bottom: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #86c3ff;
+  transform: translate(-150%, 70%);
 }
 
 .hero-btn .btn-hppm {
@@ -580,8 +579,22 @@ section {
 }
 
 @media (max-width: 640px) {
-  .hero h2 {
-    font-size: 36px;
+  .hero-image {
+    background-image: url("../img/hero-small.jpg");
+  }
+
+  .hero-text {
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 1.9rem;
+
+  }
+
+  .hero-btn {
+    transform: translate(-50%, 70%) !important;
   }
 
   .hero-btn .btn-hppm {
