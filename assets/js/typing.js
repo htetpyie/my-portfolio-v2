@@ -1,4 +1,4 @@
-const texts = ["I'm Htet Pyie Phyoe Maung.", "I'm a Software Engineer.", "I'm a Web Developer."];
+const texts = ["I'm Htet Pyie Phyoe Maung.", "I'm a Software Engineer.", "Nice to meet you."];
 let textIndex = 0;
 let charIndex = 0;
 let currentText = "";
