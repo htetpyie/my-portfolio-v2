@@ -197,6 +197,9 @@ section {
   .header {
     height: 70px;
   }
+  #home{
+    padding-top: 70px !important;
+  }
 }
 
 .header.sticked {
@@ -566,16 +569,49 @@ section {
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 36px;
-  border-radius: 50px;
-  transition: 0.5s;
   color: #fff;
   background: var(--color-primary);
-  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 15% 50%);
+  transition: 0.5s;
+  animation: blink-btn 3s infinite;
 }
+
+.hero-btn .btn-hppm::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 5%;
+  width: 90%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); 
+  clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 15% 50%);
+  z-index: -1; 
+  border-radius: inherit;
+}
+
 
 .hero-btn .btn-hppm:hover {
   background: #38bdf8;
   box-shadow: 0 8px 28px rgba(110, 231, 240, 0.884);
+}
+
+@keyframes blink-btn {
+ 
+  0%{
+    left: 0px;
+  }
+  50% {
+    left: 20px;
+    background-color: rgb(23, 126, 152);
+  }
+  100%{
+    left: 0px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -590,7 +626,6 @@ section {
 
   .hero-text h1 {
     font-size: 1.9rem;
-
   }
 
   .hero-btn {
