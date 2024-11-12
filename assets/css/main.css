@@ -636,6 +636,11 @@ section {
   .hero-btn .btn-hppm {
     font-size: 14px;
   }
+
+  .pf-text-white{
+    line-height: 1.8;
+    font-size: 1rem;
+  }
 }
 
 /* About section */
@@ -652,6 +657,6 @@ section {
 }
 
 .about-img{
-  border-radius: 250% 185% 276% 189% !important;
+  border-radius: 256% 189% 276% 189% !important;
 }
 
