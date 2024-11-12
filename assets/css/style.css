@@ -67,6 +67,12 @@ li::marker{
     padding: 10px 0px;
     margin: 5px;
     border-radius: .5rem;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+#skill .skill-container .skill-card:hover{
+    scale: 1.15;
 }
 
 #skill .skill-container .skill-card .skill-title{
