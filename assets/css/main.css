@@ -36,6 +36,9 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
+  font-family: "Open Sans", sans-serif;
+  background-color: #000000;
+  z-index: 0;
 }
 
 a {
@@ -657,6 +660,6 @@ section {
 }
 
 .about-img{
-  border-radius: 256% 189% 276% 189% !important;
+  border-radius: 300% 10% 300% 341% !important;
 }
 

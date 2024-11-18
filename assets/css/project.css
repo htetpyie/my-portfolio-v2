@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
-  background-color: #000000;
-  z-index: 0;
-}
 
 .fancybox-container button:focus {
   outline: 0;
